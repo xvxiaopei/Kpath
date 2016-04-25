@@ -7,8 +7,8 @@
 #include <vector>
 #include <assert.h>
 
-#define VER 100
-#define MAX 500
+#define VER 50
+#define MAX 1000
 
 using namespace std;
 
@@ -48,9 +48,12 @@ public:
 	int exist (int u,int v) const;       //return if edge(u-v) is exist
 	Graph(int numOfVer=0);
 	void empty();              //empty this graph
-	bool insert(int u,int v,int w);  
+	bool insert(int u,int v,int w=1,bool d=true);     //d   direction?
+
 	void print();
 	void addPath(int s,int t,int max=MAX);   //add a path from s to t goes through all vertices in the G
+
+	Graph* toTopo(int *new_ver);
 
 };
 
