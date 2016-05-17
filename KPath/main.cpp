@@ -75,7 +75,7 @@ int main(){
 	g1->addPath(0,VER);
 
 
-	for(int k=8;k<10;k++){
+	for(int k=3;k<9;k++){
 
 	cout<<"K = "<<k<<endl;
 

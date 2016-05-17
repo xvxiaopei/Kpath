@@ -7,7 +7,7 @@
 #include <vector>
 #include <assert.h>
 
-#define VER 50
+#define VER 100
 #define MAX 1000
 
 using namespace std;
